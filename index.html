@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    var number = 0;
+    function numberFunc() {
+        var number = Math.ceil(Math.random() * 100);
+        if (document.getElementById("2").value == number) {
+            document.getElementById("1").innerText = "Yes the number is " + number +"";
+        } else {
+            document.getElementById("1").innerText = "No the number was " + number +"";
+        }
+    }
+</script>
+<style>
+    html, body{
+        background: linear-gradient(108deg, #EFB495 0%, #FF9B82 100%);
+        align-items: center;
+        justify-content: center;
+        height: 100%; 
+        overflow: hidden;
+        margin: auto;
+    }
+
+    h1 {
+        color: #FFD;
+        text-align: center;
+        font-family: Josefin Sans;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    input {
+        width: 450px;
+        height: 67px;
+        flex-shrink: 0;
+        border-radius: 25px;
+        background: rgba(238, 238, 238, 0.35);
+        border: 0;
+        color: #FFD;
+        font-family: Josefin Sans;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        margin: 10px;
+    }
+
+    input:hover {
+        width: 450px;
+        height: 67px;
+        flex-shrink: 0;
+        border-radius: 25px;
+        background: rgba(238, 238, 238, 0.65);
+        border: 0;
+        color: #FFD;
+        font-family: Josefin Sans;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        margin: 10px;
+    }
+
+    button {
+        width: 194px;
+        height: 67px;
+        flex-shrink: 0;
+        border-radius: 25px;
+        border: 0;
+        background: #1E1E1E;
+        color: #FFD;
+        text-align: center;
+        font-family: Josefin Sans;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 10px;
+    }
+
+    button:hover {
+        width: 194px;
+        height: 67px;
+        flex-shrink: 0;
+        border-radius: 25px;
+        border: 0;
+        background: #2E2E2E;
+        color: #FFD;
+        text-align: center;
+        font-family: Josefin Sans;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 10px;
+    }
+
+    button:active {
+        width: 194px;
+        height: 67px;
+        flex-shrink: 0;
+        border-radius: 25px;
+        border: 0;
+        background: #1E1E1E;
+        color: #FFD;
+        text-align: center;
+        font-family: Josefin Sans;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 10px;
+    }
+
+    div {
+        flex-shrink: 0;
+        width: 600px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <h1 id="1">Guess the number in my mind!</h1><br>
+    <input type="text" name="number" id="2" placeholder="Enter number"><br>
+    <button onclick="numberFunc()">Guess!</button>
+    </div>
+</body>
+</html>
